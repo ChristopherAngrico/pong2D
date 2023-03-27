@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 52409343}
   - component: {fileID: 52409342}
   - component: {fileID: 52409341}
-  - component: {fileID: 52409340}
+  - component: {fileID: 52409344}
   m_Layer: 3
   m_Name: Player2
   m_TagString: Player2
@@ -158,20 +158,6 @@ Transform:
   m_Father: {fileID: 297749207}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &52409340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 52409338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f14a10bc7db28074aad5a4e6ee20e485, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  boundaryY: 4.5
 --- !u!50 &52409341
 Rigidbody2D:
   serializedVersion: 4
@@ -271,6 +257,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &52409344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52409338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda38d7e5a13e8640bf3812cc8c11b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &56873730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,7 +2399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14a10bc7db28074aad5a4e6ee20e485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   boundaryY: 4.5
 --- !u!50 &1502968398
 Rigidbody2D:
