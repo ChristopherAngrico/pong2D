@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform player1, player2;
     [SerializeField] GameObject ball;
     [SerializeField] GameObject showWinner, Instruction;
+    public Button button;
     private void Awake()
     {
         if (gameManager == null)
@@ -71,10 +72,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void PressAnyWhere(){
-        ball.GetComponent<BallMovement>().EnableScript();
-        Instruction.SetActive(false);
-    }
+    // public void PressAnyWhere(){
+    //     ball.GetComponent<BallMovement>().EnableScript();
+    //     Instruction.SetActive(false);
+    //     button.interactable = true;
+    // }
 
     // public void DiableShowWinner(){
     //     showWinner.SetActive(false);

@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 56873733}
-  maxScore: 5
+  maxScore: 2
 --- !u!114 &56873733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 351350210}
-  maxScore: 5
+  maxScore: 2
 --- !u!114 &351350210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2079,7 +2079,8 @@ MonoBehaviour:
   player2: {fileID: 52409339}
   ball: {fileID: 1220949711}
   showWinner: {fileID: 1690850486}
-  Instruction: {fileID: 1434152305}
+  Instruction: {fileID: 0}
+  button: {fileID: 1434152307}
 --- !u!1 &1427077454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,6 +2230,7 @@ GameObject:
   - component: {fileID: 1434152309}
   - component: {fileID: 1434152308}
   - component: {fileID: 1434152307}
+  - component: {fileID: 1434152310}
   m_Layer: 5
   m_Name: Instruction
   m_TagString: Untagged
@@ -2302,8 +2304,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1384934484}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1434152310}
+        m_TargetAssemblyTypeName: InstructionScript, Assembly-CSharp
         m_MethodName: PressAnyWhere
         m_Mode: 1
         m_Arguments:
@@ -2352,6 +2354,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434152305}
   m_CullTransparentMesh: 1
+--- !u!114 &1434152310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434152305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e499313805c4c2741b5b6264c537adb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1220949716}
+  instruction: {fileID: 1434152305}
 --- !u!1 &1502968395
 GameObject:
   m_ObjectHideFlags: 0
