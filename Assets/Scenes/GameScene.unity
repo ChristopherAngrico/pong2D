@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 56873733}
-  maxScore: 2
+  maxScore: 5
 --- !u!114 &56873733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 351350210}
-  maxScore: 2
+  maxScore: 5
 --- !u!114 &351350210
 MonoBehaviour:
   m_ObjectHideFlags: 0
